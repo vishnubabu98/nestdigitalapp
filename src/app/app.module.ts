@@ -12,6 +12,10 @@ import { Route, RouterModule, Routes } from '@angular/router';
 import { AdminPortalComponent } from './admin-portal/admin-portal.component';
 import { ViewCoursesComponent } from './view-courses/view-courses.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
+import { EmploginComponent } from './emplogin/emplogin.component';
+import { EmpAddCourseComponent } from './emp-add-course/emp-add-course.component';
+import { EmpaddfriendsComponent } from './empaddfriends/empaddfriends.component';
+import { EmpregComponent } from './empreg/empreg.component';
 
 const myRoute:Routes=[
   {
@@ -39,6 +43,17 @@ const myRoute:Routes=[
   },
   {
     path:"viewfriend",component:ViewFriendComponent
+  },
+  {
+    path:"emplogin",component:EmploginComponent
+  },
+  {
+    path:"empaddcourse",component:EmpAddCourseComponent
+  },{
+    path:"empaddfriend",component:EmpaddfriendsComponent
+  },
+  {
+    path:"empreg",component:EmpregComponent
   }
 ]
 
@@ -52,7 +67,11 @@ const myRoute:Routes=[
     NavbarHomeComponent,
     AdminPortalComponent,
     ViewCoursesComponent,
-    ViewFriendComponent
+    ViewFriendComponent,
+    EmploginComponent,
+    EmpAddCourseComponent,
+    EmpaddfriendsComponent,
+    EmpregComponent
   ],
   imports: [
     BrowserModule,
