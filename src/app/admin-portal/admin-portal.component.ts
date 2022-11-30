@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-portal',
@@ -9,6 +10,7 @@ export class AdminPortalComponent {
 
   username=""
   password=""
+  constructor(private route : Router){}
 
   adminlogin =()=>
   {
@@ -17,6 +19,14 @@ export class AdminPortalComponent {
       "password":this.password
     }
     console.log(data)
+    if(this.username=="admin" && this.password=="nestdigital")
+    {
+      this.route.navigate(['/viewcourse'])
+    }
+    else{
+      alert("not valid credential")
+    }
+
   }
 
 }
