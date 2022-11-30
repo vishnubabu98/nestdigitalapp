@@ -7,19 +7,16 @@ import { ApiService } from '../api.service';
   styleUrls: ['./view-friend.component.css']
 })
 export class ViewFriendComponent {
-  constructor(private api:ApiService)
+  constructor(private api: ApiService) {
 
-  {
+    api.fetchFriends().subscribe(
+      (response) => {
+        this.data = response
+      }
 
-        api.fetchFriends().subscribe(
-          (response)=>
-          {
-            this.data = response
-          }
-
-        )
+    )
 
   }
-  data:any=[]
+  data: any = []
 
 }
