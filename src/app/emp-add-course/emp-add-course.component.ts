@@ -20,13 +20,24 @@ export class EmpAddCourseComponent {
   readValues = () => {
 
     let data: any = { "courseTitle": this.courseTitle, "courseDescription": this.courseDescription, "courseDuration": this.courseDuration, "courseDate": this.courseDate, "courseVenue": this.courseVenue }
-
     console.log(data)
 
     this.api.addCourse(data).subscribe(
 
       (response: any) => {
         console.log(response)
+        if (response.status == "success") 
+        {
+          alert("added successfully")
+          this.courseDate=""
+          this.courseDescription=""
+          this.courseDuration=""
+          this.courseTitle=""
+          this.courseVenue=""
+        } else 
+        {
+          alert("Not added")
+        }
       }
     )
 

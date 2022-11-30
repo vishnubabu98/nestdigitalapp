@@ -43,9 +43,31 @@ export class EmpregComponent {
     console.log(data)
     if (this.password == this.confirmpassword) {
       alert("successfully registered")
+      this.empid=""
+      this.fname=""
+      this.lname=""
+      this.houseno=""
+      this.housename=""
+      this.streetname=""
+      this.pincode=""
+      this.district=""
+      this.state=""
+      this.country=""
+      this.mobno=""
+      this.email=""
+      this.parentname=""
+      this.gender=""
+      this.highestdefree=""
+      this.yearofexperience=""
+      this.dateofjoining=""
+      this.username=""
+      this.password=""
+      this.confirmpassword=""
     }
     else {
-      alert("failed to register")
+      alert("passwords are not matching")
+      this.password=""
+      this.confirmpassword=""
     }
   }
 }
