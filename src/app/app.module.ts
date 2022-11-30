@@ -16,6 +16,7 @@ import { EmploginComponent } from './emplogin/emplogin.component';
 import { EmpAddCourseComponent } from './emp-add-course/emp-add-course.component';
 import { EmpaddfriendsComponent } from './empaddfriends/empaddfriends.component';
 import { EmpregComponent } from './empreg/empreg.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes=[
   {
@@ -76,7 +77,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

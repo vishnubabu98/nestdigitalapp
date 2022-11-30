@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class EmploginComponent {
 
+  username=""
+  password=""
+
+  emplogin =()=>
+  {
+    let data:any={
+      "username":this.username,
+      "password":this.password
+    }
+    console.log(data)
+  }
+
 }
