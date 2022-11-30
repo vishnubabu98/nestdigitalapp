@@ -19,6 +19,7 @@ import { EmpregComponent } from './empreg/empreg.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
+import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
 
 const myRoute:Routes=[
   {
@@ -58,9 +59,7 @@ const myRoute:Routes=[
   {
     path:"empreg",component:EmpregComponent
   },
-  {
-    path:"emp",component:EmploginComponent
-  },
+  
 ]
 
 @NgModule({
@@ -78,7 +77,8 @@ const myRoute:Routes=[
     EmpAddCourseComponent,
     EmpaddfriendsComponent,
     EmpregComponent,
-    AdminnavbarComponent
+    AdminnavbarComponent,
+    EmpnavbarComponent
   ],
   imports: [
     BrowserModule,
