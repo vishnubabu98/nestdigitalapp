@@ -8,23 +8,21 @@ import { Router } from '@angular/router';
 })
 export class EmploginComponent {
 
-  username=""
-  password=""
+  username = ""
+  password = ""
 
-  constructor(private route : Router){}
+  constructor(private route: Router) { }
 
-  emplogin =()=>
-  {
-    let data:any={
-      "username":this.username,
-      "password":this.password
+  emplogin = () => {
+    let data: any = {
+      "username": this.username,
+      "password": this.password
     }
     console.log(data)
-    if(this.username=="1122" && this.password=="12345")
-    {
+    if (this.username == "1122" && this.password == "12345") {
       this.route.navigate(['/empaddcourse'])
     }
-    else{
+    else {
       alert("not valid credential")
     }
 

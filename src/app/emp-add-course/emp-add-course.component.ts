@@ -8,31 +8,28 @@ import { ApiService } from '../api.service';
 })
 export class EmpAddCourseComponent {
 
-  courseTitle=""
-  courseDescription=""
-  courseDuration=""
-  courseDate=""
-  courseVenue=""
+  courseTitle = ""
+  courseDescription = ""
+  courseDuration = ""
+  courseDate = ""
+  courseVenue = ""
 
-  constructor(private api:ApiService){}
+  constructor(private api: ApiService) { }
 
 
-  readValues = ()=>
+  readValues = () => {
 
-  {
-  
-    let data : any= {"courseTitle":this.courseTitle,"courseDescription":this.courseDescription,"courseDuration":this.courseDuration,"courseDate":this.courseDate,"courseVenue":this.courseVenue}
-  
+    let data: any = { "courseTitle": this.courseTitle, "courseDescription": this.courseDescription, "courseDuration": this.courseDuration, "courseDate": this.courseDate, "courseVenue": this.courseVenue }
+
     console.log(data)
-  
-        this.api.addCourse(data).subscribe(
-    
-      (response:any)=>
-      {
-        console.log(response)
-}
-)
+
+    this.api.addCourse(data).subscribe(
+
+      (response: any) => {
+        console.log(response)
+      }
+    )
 
 
-}
+  }
 }
