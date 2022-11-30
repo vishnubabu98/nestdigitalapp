@@ -9,6 +9,9 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarHomeComponent } from './navbar-home/navbar-home.component';
 import { Route, RouterModule, Routes } from '@angular/router';
+import { AdminPortalComponent } from './admin-portal/admin-portal.component';
+import { ViewCoursesComponent } from './view-courses/view-courses.component';
+import { ViewFriendComponent } from './view-friend/view-friend.component';
 
 const myRoute:Routes=[
   {
@@ -26,6 +29,16 @@ const myRoute:Routes=[
   {
     path:"about",
     component:AboutComponent
+  },
+  {
+    path:"admin",
+    component:AdminPortalComponent
+  },
+  {
+    path:"viewcourse",component:ViewCoursesComponent
+  },
+  {
+    path:"viewfriend",component:ViewFriendComponent
   }
 ]
 
@@ -36,7 +49,10 @@ const myRoute:Routes=[
     ContactusComponent,
     GalleryComponent,
     AboutComponent,
-    NavbarHomeComponent
+    NavbarHomeComponent,
+    AdminPortalComponent,
+    ViewCoursesComponent,
+    ViewFriendComponent
   ],
   imports: [
     BrowserModule,
