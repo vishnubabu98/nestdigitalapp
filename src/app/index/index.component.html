@@ -1,33 +1,135 @@
 <app-navbar-home></app-navbar-home>
-<div class="container">
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="https://www.nestdigital.com/images/banner2.jpg"class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-1131024,resizemode-1,msid-86426242/news/company/corporate-trends/nest-digital-announces-new-business-leaders-for-industrial-bfsi-sectors.jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                </div>
+<div style="background-image:url(https://s3.envato.com/files/3a6e02dc-2769-456d-a9d7-248ffe6d4005/inline_image_preview.jpg);">
 
+<div style="background-image:url(https://img.freepik.com/premium-photo/abstract-white-powder-explosion-black-background_36326-3409.jpg?w=2000) ;"></div>
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+      <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <div class="content d-flex align-items-center justify-content-center">
+            <div class="container rounded">
+              <div class="h1 fw-bold text-center mt-2"style="color: darkkhaki;">NeST Digital</div>
+              <div class="h3 text-center pt-2"></div>
+              <div class="fs-5 text-center pb-3 mb-3">Our great partners</div>
+              <div class="rollers position-relative overflow-hidden">
+                <div class="start-roller"></div>
+                <div class="wrapper">
+                  <div class="items-container roll-LL">
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/original-microsoft-logo-28.png" alt=""
+                        class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/facebook-logo-15.jpg" alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/google-logo-new-history-png-9.png" alt=""
+                        class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img
+                        src="https://www.freepnglogos.com/uploads/logo-tokopedia-png/tokopedia-apa-itu-startup-pengertian-cara-memulai-dan-1.png"
+                        alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img
+                        src="https://www.freepnglogos.com/uploads/amazon-png-logo-vector/woodland-gardening-amazon-png-logo-vector-8.png"
+                        alt="" class="company">
+                    </div>
+                  </div>
+                  <div class="items-container roll-RL">
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/original-microsoft-logo-28.png" alt=""
+                        class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/facebook-logo-15.jpg" alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/google-logo-new-history-png-9.png" alt=""
+                        class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img
+                        src="https://www.freepnglogos.com/uploads/logo-tokopedia-png/tokopedia-apa-itu-startup-pengertian-cara-memulai-dan-1.png"
+                        alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img
+                        src="https://www.freepnglogos.com/uploads/amazon-png-logo-vector/woodland-gardening-amazon-png-logo-vector-8.png"
+                        alt="" class="company">
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="items-container reverse-roll-LL">
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/at-t-logo/brand-new-emblem-at-t-png-logo-6.png"
+                        alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/sprint-png-logo/brand-sprint-png-logo-11.png"
+                        alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/linkedin-logo-transparent-png-16.png" alt=""
+                        class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/nokia-brand-logos-12.png" alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img
+                        src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-logo-transparent-vector-3.png"
+                        alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/cisco-png-logo/world-cisco-png-logo-12.png" alt=""
+                        class="company">
+                    </div>
+                  </div>
+                  <div class="items-container reverse-roll-RL">
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/at-t-logo/brand-new-emblem-at-t-png-logo-6.png"
+                        alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/sprint-png-logo/brand-sprint-png-logo-11.png"
+                        alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/linkedin-logo-transparent-png-16.png" alt=""
+                        class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/nokia-brand-logos-12.png" alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img
+                        src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-logo-transparent-vector-3.png"
+                        alt="" class="company">
+                    </div>
+                    <div class="item">
+                      <img src="https://www.freepnglogos.com/uploads/cisco-png-logo/world-cisco-png-logo-12.png" alt=""
+                        class="company">
+                    </div>
+                  </div>
+                </div>
+                <div class="end-roller"></div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+
+      </div>
+  </div>
 </div>
+</div>
+
