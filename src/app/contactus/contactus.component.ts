@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./contactus.component.css']
 })
 export class ContactusComponent {
+  FirstName=""
+  SecondName=""
+  Email=""
+  HowCanWeHelpYou?=""
+
+  readValues=()=>
+  {
+    let data:any={"FirsName":this.FirstName,"SecondName":this.SecondName,"Email":this.Email,"HowCanWeHelpYou?":this.HowCanWeHelpYou}
+    console.log(data)
+  }
 
 }

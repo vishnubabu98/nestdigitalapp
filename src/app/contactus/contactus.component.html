@@ -16,22 +16,22 @@ color: darkmagenta;
                     <div class="row g-3">
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">FirstName</label>
-                            <input type="text" class="form-control">
+                            <input name="FirstName"[(ngModel)]="FirstName" type="text" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">SecondName</label>
-                            <input type="text" class="form-control">
+                            <input name="SecondName"[(ngModel)]="SecondName" type="text" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">Email</label>
-                            <input type="text" class="form-control">
+                            <input name="Email"[(ngModel)]="Email" type="text" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label">How Can We Help You?</label>
-                            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                            <textarea name="HowCanWeHelpYou?"[(ngModel)]="HowCanWeHelpYou" name="" id="" cols="30" rows="10" class="form-control"></textarea>
                         </div>
                         <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center">
-                            <button class="btn btn-success">Submit</button>
+                            <button (click)="readValues()" class="btn btn-success">Submit</button>
                         </div>
                     </div>
                     </div>
